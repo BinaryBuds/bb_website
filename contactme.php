@@ -1,6 +1,4 @@
-<?php
-// Assuming your mailfunction.php defines a function like mailfunction($to, $subject, $body)
-require("./mailing/mailfunction.php");
+<?php require("./mailing/mailfunction.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
@@ -21,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recipient = "binarybuds5@gmail.com"; // Replace with your recipient's email address
 
     // Send email using your custom function
-    $status = mailfunction($recipient, "New Contact Form Submission", $body);
+    $status = mailfunction($recipient, "New Contact Form Submission", $body, false);
 
     if ($status) {
         echo '<center><h1>Thanks! We will contact you soon.</h1></center>';

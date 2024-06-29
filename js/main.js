@@ -25,7 +25,6 @@ $(document).ready(function(){
 	const updateCount = () => {
 		const target = +counter.getAttribute('data-target');
 		const count = +counter.innerText;
-        debugger;
 		const inc = Math.round(target / speed) + 1;
 		if (count < target) {
 			counter.innerText = count + inc;
