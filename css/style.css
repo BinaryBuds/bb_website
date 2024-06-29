@@ -338,7 +338,7 @@ body{
 
 .counters .container {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 30px;
 	text-align: center;
 }
@@ -353,7 +353,7 @@ body{
 	margin: 10px 0;
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
 	.counters .container {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -363,7 +363,7 @@ body{
 		border-bottom: 1px lightskyblue solid;
 		padding-bottom: 20px;
 	}
-}
+} */
 
 .section-head-1{
     margin-bottom: 60px;
